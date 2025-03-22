@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterBlog - Main</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Welcome to MasterBlog !</h1>
+    <div class="btn-block">
+      <button type="submit" onclick="location.pathname='/add'">Add Post</button>
+    </div>
+    {% for post in posts %}
+    <div class="post">
+      <h2>{{ post.title }}</h2>
+      <div class="post-buttons">
+        <form class="post-likes" action="/like/{{ post.id }}" method="post">
+          <input
+            class="like-btn"
+            onclick="this.parentElement.submit()"
+            type="button"
+            value="{{ post.likes }}x👍 Like"
+          />
+        </form>
+        <form class="post-update" action="/update/{{ post.id }}" method="get">
+          <input
+            class="upd-btn"
+            onclick="this.parentElement.submit()"
+            type="button"
+            value="✏️ Edit"
+          />
+        </form>
+        <form class="post-delete" action="/delete/{{ post.id }}" method="post">
+          <input
+            class="del-btn"
+            onclick="this.parentElement.submit()"
+            type="button"
+            value="❌ Delete"
+          />
+        </form>
+      </div>
+      <p>
+        <em><small>Written by {{ post.author }}</small></em>
+      </p>
+      <p>{{ post.content }}</p>
+    </div>
+    {% endfor %}
+  </body>
+</html>

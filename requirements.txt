@@ -1,0 +1,4 @@
+msgspec
+jinja2
+flask
+dotenv

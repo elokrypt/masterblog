@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "author": "John Doe",
+        "title": "First Post",
+        "content": "This is my first post.",
+        "likes": 1
+    },
+    {
+        "id": 2,
+        "likes": 42,
+        "author": "Marcel Bobolz",
+        "content": "As above - so below.",
+        "title": "Hermetic Law #1"
+    }
+]

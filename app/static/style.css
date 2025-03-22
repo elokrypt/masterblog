@@ -1,0 +1,166 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #666a;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4f4f4f;
+  text-shadow: 0px 0px 5px, #fff 0px 0px 10px, 2px 2px 2px rgba(93, 206, 10, 0);
+}
+
+.post {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 42px;
+  border-radius: 8px;
+}
+
+.post h2 {
+  margin: 0 0 auto;
+}
+
+.post p {
+  margin: 10px 0;
+}
+
+.post .post-likes {
+  visibility: hidden;
+  width: auto;
+  background-color: #333c;
+  color: #096e;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 90%;
+  margin-left: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.post .post-delete {
+  visibility: hidden;
+  width: 72px;
+  background-color: #333c;
+  color: #f00e;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  left: 90%;
+  margin-left: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.post .post-update {
+  visibility: hidden;
+  width: 72px;
+  background-color: #333c;
+  color: #af0a;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  right: 15%;
+  margin-left: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.post:hover .post-likes,
+.post:hover .post-delete,
+.post:hover .post-update {
+  visibility: visible;
+  opacity: 1;
+}
+
+.like-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: green;
+}
+
+.like-btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: limegreen;
+}
+
+.like-btn:active {
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: lime;
+}
+
+.del-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: darkred;
+}
+
+.del-btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: red;
+}
+
+.del-btn:active {
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: crimson;
+}
+
+.upd-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: darkgoldenrod;
+}
+
+.upd-btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: goldenrod;
+}
+
+.upd-btn:active {
+  background-color: transparent;
+  border: 0px solid transparent;
+  color: orange;
+}
+
+.btn-block {
+  margin-top: 20px;
+  text-align: center;
+}
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #098454;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #06a366;
+}

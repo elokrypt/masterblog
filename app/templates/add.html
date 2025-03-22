@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MasterBlog - Update post</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style_sub.css') }}"
+    />
+  </head>
+  <body>
+    <a href="/">Back</a>
+    <div class="postbox">
+      <form action="{{ url_for('add') }}" method="post">
+        <h1>MasterBlog - Add your Post</h1>
+        <div class="item">
+          <p>Your name</p>
+          <div>
+            <input
+              id="author"
+              type="text"
+              name="author"
+              placeholder="Your name here..."
+              required
+            />
+          </div>
+        </div>
+        <div class="item">
+          <p>Title</p>
+          <div>
+            <input
+              id="title"
+              type="text"
+              name="title"
+              placeholder="Your content's title here..."
+              required
+            />
+          </div>
+        </div>
+        <div class="item">
+          <p>Content</p>
+          <textarea
+            id="content"
+            name="content"
+            rows="16"
+            placeholder="Your blog post here..."
+            required
+          ></textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="_">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

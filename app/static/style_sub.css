@@ -1,0 +1,81 @@
+html,
+body {
+  min-height: 100%;
+  background-color: #666a;
+  padding: 20px;
+  color: #333;
+}
+body,
+div,
+form,
+input,
+p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+}
+h1 {
+  margin: 15px 0;
+  font-weight: 400;
+  text-align: center;
+  color: #4f4f4f;
+}
+.postbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 3px;
+}
+form {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc;
+}
+input,
+textarea {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input:hover,
+textarea:hover {
+  outline: none;
+  border: 1px solid #095484;
+}
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  width: calc(100% - 6px);
+  overflow: scroll;
+  resize: none;
+}
+.item {
+  position: relative;
+  margin: 10px 0;
+}
+.btn-block {
+  margin-top: 20px;
+  text-align: center;
+}
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #098454;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #06a366;
+}
