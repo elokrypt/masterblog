@@ -1,4 +1,4 @@
-# The MoviesDB
+# The MasterBlog website
 
 An example Flask application, utilizing Jinja2 templates and
 a JSON-file database to store Blog posts of a Blog-website.
